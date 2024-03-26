@@ -3,10 +3,12 @@ name = "rust-nation-intermediate-workshop"
 version = "0.1.0"
 edition = "2021"
 
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [workspace]
 members = [
+    "server",
     "v1_init",
     "v2_scoped_threads",
     "v3_all_cpus",
@@ -16,3 +18,5 @@ members = [
     "v7_rayon",
     "v8_tokio",
 ]
+
+[dependencies]
