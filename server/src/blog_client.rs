@@ -1,5 +1,5 @@
-use crate::domain::BlogPost;
 use anyhow::Result;
+use domain::blog_post::BlogPost;
 use sqlx::Row;
 
 pub async fn get_blog_posts(pool: sqlx::SqlitePool) -> Result<Vec<BlogPost>> {

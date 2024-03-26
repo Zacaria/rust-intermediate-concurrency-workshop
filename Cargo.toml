@@ -8,6 +8,7 @@ edition = "2021"
 
 [workspace]
 members = [
+    "blog_client", "domain",
     "server",
     "v1_init",
     "v2_scoped_threads",

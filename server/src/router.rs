@@ -2,13 +2,14 @@ use axum::{
     routing::{get, post},
     Extension,
 };
+use domain::blog_post::BlogPost;
 use sqlx::SqlitePool;
 
 use crate::{
     blog_client::{
         add_blog_post, delete_blog_post, get_blog_post, get_blog_posts, update_blog_post,
     },
-    domain::BlogPost,
+    // save_domain::BlogPost,
 };
 
 pub fn get_router(pool: SqlitePool) -> axum::Router {
